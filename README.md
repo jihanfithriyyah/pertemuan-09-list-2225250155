@@ -33,11 +33,11 @@ pertemuan-09-list-NIM/
 └── praktik/
     └── analisis_nilai_mahasiswa.py
 
-### Penjelasan File
+## Penjelasan File
 latihan/: Berisi file-file latihan dasar pengolahan list (membuat list, akses indeks/slicing, manipulasi elemen, perhitungan agregasi, filtering, dan penerapan fungsi statistik).
 praktik/analisis_nilai_mahasiswa.py: Program utama yang menyimpan sekumpulan nilai mahasiswa, menghitung ringkasan statistik (total, rata-rata, min, max), serta mengklasifikasikan kelulusan mahasiswa.
 
-### Cara Menjalankan Program
+## Cara Menjalankan Program
 Buka terminal di VS Code pada direktori utama proyek, lalu jalankan perintah berikut:
 Menjalankan File Latihan
 ```Bash
@@ -52,7 +52,7 @@ Menjalankan Program Praktik Utama
 Bash
 python3 praktik/analisis_nilai_mahasiswa.py
 
-### Test Case
+## Test Case
 Berikut adalah tabel hasil pengujian untuk program analisis_nilai_mahasiswa.py:
 Data Input / Kondisi	Hal yang Diperiksa	Hasil yang Diharapkan	Hasil Aktual	Status
 [60, 70, 80]	Rata-rata	70.00	70.00	Pass
@@ -62,6 +62,6 @@ Data Input / Kondisi	Hal yang Diperiksa	Hasil yang Diharapkan	Hasil Aktual	Statu
 [] (List Kosong)	Penanganan List Kosong	Mengembalikan 0 (Tidak Error/ZeroDivisionError)	0	Pass
 [78, 55, 90, 67, 60, 82, 45, 71, 88, 59]	Data Praktik Utama	Total = 695, Rata-rata = 69.50, Lulus = 7, Belum Lulus = 3	Total = 695, Rata-rata = 69.50, Lulus = 7, Belum Lulus = 3	Pass
 
-### Refleksi
+## Refleksi
 Hal yang Dipahami: Saya memahami bahwa penggunaan struktur data list jauh lebih efisien dibandingkan menggunakan banyak variabel terpisah saat mengolah kumpulan data. Saya juga memahami bahwa indeks Python dimulai dari 0 dan indeks negatif (-1) berguna untuk mengakses elemen dari arah belakang.
 Kesalahan yang Berhasil Diperbaiki: Saat menghitung rata-rata dari list kosong, program awalnya berpotensi mengalami ZeroDivisionError. Hal ini berhasil diatasi dengan menambahkan pengecekan if len(data) == 0: sebelum melakukan pembagian.
